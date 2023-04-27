@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.site-title {
+    width: 109px;
+    line-height: 1px;
+    margin: 0 auto 36px auto;
+}
+
+.site-title a {
+    display: block;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+    max-width: 1000px;
+    padding: 46px 0 26px 0;
+    margin: 0 auto 50px auto;
+    border-bottom: solid 1px #c3c3c3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu,
+nav .login {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu li {
+    margin-right: 14px;
+}
+
+nav .login li {
+    margin-left: 14px;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
+    margin-top: none;
+    margin-bottom: 20px;
+}
+
+.input-name-class,
+.input-password-class,
+.input-email-class,
+.input-address-class,
+.input-birth-class {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-left: 15%;
+    margin-right: 160px;
+    margin-top: 10px;
+}
+
+#input-name,
+#input-password,
+#input-email,
+#input-address,
+#input-birth {
+    width: 250px;
+}
+
+.input-name-label label,
+.input-password-label,
+.input-email-label label,
+.input-address-label label,
+.input-birth-label label {
+    width: 200px;
+    /* margin-right: 20px; */
+}
+
+li {
+    list-style-type: none;
+    background-color: #FFF;
+    display: table-cell;
+    cursor: pointer;
+}
+
+.control-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.save-button,
+.clear-button {
+    font-size: 20px;
+}

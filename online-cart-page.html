@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="online-cart-page.css">
+    <title>簡易ECサイト</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="site-title">
+            <a href="index.html"><img class="company-logo" src="/img/company-logo.jpeg" alt="logo"></a>
+        </div>
+
+        <nav class="wrapper">
+            <ul class="menu">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">VINTAGE</a></li>
+                <li><a href="#">CATEGORY</a></li>
+                <li><a onclick="location.href='login-page.html';">RESISTER</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <img class="survenier-photo" src="/img/survenier-photo.jpeg">
+        <p>￥9,999 +tax</p>
+
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th class="color">Color</th>
+                    <th class="size">Size</th>
+                    <th class="quantity">数量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>金色</td>
+                    <td>S</td>
+                    <td>
+                        <text type="text" class="display-s" id="display-s"></text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>金色</td>
+                    <td>M</td>
+                    <td>
+                        <text type="text" class="display-m" id="display-m"></text>
+                    </td>
+                </tr>
+                <tr>
+                    <td>金色</td>
+                    <td>L</td>
+                    <td>
+                        <text type="text" class="display-l" id="display-l"></text>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="total" id="total"></p>
+
+
+
+        <ul class="buy-return-button">
+            <li><button type="button" class="buy-button" id="buy">購入へ</li>
+            <li><button type="button" class="return-button" id="return" onclick="location.href='index.html';">戻る
+            </li>
+        </ul>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        const selectedValueS = localStorage.getItem("selected_value_s");
+        const selectedValueM = localStorage.getItem("selected_value_m");
+        const selectedValueL = localStorage.getItem("selected_value_l");
+        $("#display-s").text(selectedValueS);
+        $("#display-m").text(selectedValueM);
+        $("#display-l").text(selectedValueL);
+
+        // HTMLのp要素を取得
+        const totalElement = document.getElementById('total');
+
+        // 計算を実行。parseIntで文字列を整数列に変換する。
+
+        const total = "合計金額：¥" + (9999 * (parseInt(selectedValueS) + parseInt(selectedValueM) + parseInt(selectedValueL))) + " + tax";
+
+        // 計算結果をp要素のテキストとして設定
+        totalElement.textContent = total;
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <footer id="footer" class="wrapper">
+        <p class="copyright">&copy; hidexxxxx</p>
+    </footer>
+</body>

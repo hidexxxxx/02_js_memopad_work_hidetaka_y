@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.site-title {
+    width: 109px;
+    line-height: 1px;
+    margin: 0 auto 36px auto;
+}
+
+.site-title a {
+    display: block;
+}
+
+#header {
+    max-width: 1000px;
+    padding: 46px 0 26px 0;
+    margin: 0 auto 50px auto;
+    border-bottom: solid 1px #c3c3c3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu,
+nav .login {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
+    margin-top: none;
+    margin-bottom: 20px;
+}
+
+
+.survenier-photo {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .menu,
+nav .login {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav .menu li {
+    margin-right: 14px;
+}
+
+nav .login li {
+    margin-left: 14px;
+}
+
+
+.buy-return-button {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.buy-button,
+.return-button {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+#footer {
+    padding: 10px 0;
+}
+
+#footer .copyright {
+    font-size: 0.625rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.order-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: solid 1px #c3c3c3;
+    font-weight: normal;
+    padding: 10px;
+    border-right: solid 1px #c3c3c3;
+    text-align: center;
+    border-right: none;
+}
+
+.total {
+    font-size: 25px;
+}
